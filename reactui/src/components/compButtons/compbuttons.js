@@ -1,10 +1,12 @@
 import React from "react";
 import"./compbuttons.css";
 
-const compbuttons = props => (
-  <span className="compbuttons-btn" {...props}>
+const Compbuttons = props => (
+  <span className="compbuttons" {...props}>
     
+  	<Button waves='light'>Component Button<Icon left>cloud</Icon></Button>
+
   </span>
 );
 
-export default compbuttons;
+export default Compbuttons;
