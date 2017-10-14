@@ -21,7 +21,7 @@
 .App-intro {
   font-size: large;
 }
-
+/*swithc to our logo instead*/
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
