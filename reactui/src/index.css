@@ -18,8 +18,14 @@ body {
 	width: 100%;
 }
 
+#fuzzbutt{
 
-#editorbox{
+
+	border: yellow solid 5px;
+}
+
+
+#ace-editor{
 
 	border: orange solid 5px;
 	height: 500px;

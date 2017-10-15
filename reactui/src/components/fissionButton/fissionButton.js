@@ -1,13 +1,12 @@
 import React from "react";
+import "./fissionButton.css";
+import {Button, Icon} from 'react-materialize'
 
-const fissionButton = () =>
+const FissionButton= () => (
+	<Button waves='light'>
+		<Icon>thumb_up</Icon>
+	</Button>
+)
 
-
-<div>
-
-	<Button waves='light'>button</Button>
-
-
-</div>;
 
 export default FissionButton;

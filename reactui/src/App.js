@@ -4,6 +4,7 @@ import './App.css';
 // import Compbuttons from "./components/Compbuttons";
 import CodeEditor from "./components/editor";
 // import AceEditor from "./components/editor";
+import FissionButton from "./components/fissionButton";
 
 class App extends Component {
   render() {
@@ -18,11 +19,13 @@ class App extends Component {
 
             </div>
         </nav>
-        <div id ="editorbox"></div>
+        <FissionButton />
+        <CodeEditor />
+        <div id ="fissbutt"></div>
         <div id = "buttonbox"></div>
         <div id="sidemenu"></div>
      
-        <CodeEditor />
+
 
 
 
