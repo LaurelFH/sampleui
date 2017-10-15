@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import Compbuttons from "./Compbuttons";
+// import Compbuttons from "./components/Compbuttons";
 import CodeEditor from "./components/editor";
-
+// import AceEditor from "./components/editor";
 
 class App extends Component {
   render() {
@@ -22,7 +22,11 @@ class App extends Component {
         <div id = "buttonbox"></div>
         <div id="sidemenu"></div>
      
-       <CodeEditor />
+        <CodeEditor />
+
+
+
+      
                   </div>
     );
   }

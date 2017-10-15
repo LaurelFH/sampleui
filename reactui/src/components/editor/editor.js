@@ -1,3 +1,5 @@
+//old code
+
 import ReactAce from 'react-ace-editor';
 import React, { Component } from 'react';
  
@@ -23,10 +25,11 @@ class CodeEditor extends Component {
         setReadOnly="false"
         onChange={this.onChange}
         style={{ height: '400px' }}
-        ref={instance => { this.ace = instance; }} // Let's put things into scope
+        ref={instance => { this.ace = instance; }} // Let's put things into scope  
       />
     );
   }
 }
 
 export default CodeEditor;
+
