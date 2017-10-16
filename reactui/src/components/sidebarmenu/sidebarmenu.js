@@ -3,7 +3,7 @@ import Button from 'material-ui/Button';
 import Popover, {PopoverAnimationVertical} from 'material-ui/Popover';
 import Menu from 'material-ui/Menu';
 import MenuItem from 'material-ui/Menu/MenuItem';
-import "./sidebarmenu.css"
+import "./sidebarmenu.css";
 
 class PopoverExampleAnimation extends React.Component {
 
