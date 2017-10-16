@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 // import Compbuttons from "./components/Compbuttons";
 import CodeEditor from "./components/editor";
 // import AceEditor from "./components/editor";
 import FissionButton from "./components/fissionButton";
 import PopoverExampleAnimation from "./components/sidebarmenu";
-import RaisedButtonExampleSimple from "./components/compButtons";
+import ButtonExample from "./components/compbuttons";
 
 class App extends Component {
   render() {
@@ -22,7 +23,7 @@ class App extends Component {
             </div>
         </nav>
         <FissionButton />
-        <RaisedButtonExampleSimple />
+        <ButtonExample />
         <CodeEditor />
         <div id ="fissbutt"></div>
         <div id = "buttonbox"></div>
