@@ -19,20 +19,14 @@ class App extends Component {
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li><a href="collapsible.html">Sign-in</a></li>
             </ul>
-
             </div>
         </nav>
         <FissionButton />
-        <ButtonExample />
+        <div id="infobox">This is info on how to use the app</div>
+             
         <CodeEditor />
-        <div id ="fissbutt"></div>
-        <div id = "buttonbox"></div>
+         <ButtonExample />
        <PopoverExampleAnimation />
-     
-
-
-
-
       
                   </div>
     );
