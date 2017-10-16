@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "material-ui": "^1.0.0-beta.17",
     "react": "^16.0.0",
     "react-ace": "^5.4.0",
     "react-ace-editor": "0.0.2",

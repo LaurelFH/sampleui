@@ -5,6 +5,8 @@ import './App.css';
 import CodeEditor from "./components/editor";
 // import AceEditor from "./components/editor";
 import FissionButton from "./components/fissionButton";
+import PopoverExampleAnimation from "./components/sidebarmenu";
+import RaisedButtonExampleSimple from "./components/compButtons";
 
 class App extends Component {
   render() {
@@ -12,18 +14,19 @@ class App extends Component {
       <div className="App">
          <nav>
           <div className="nav-wrapper">
-            <a href="#" class="brand-logo">FISSION</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a href="#" className="brand-logo">FISSION</a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li><a href="collapsible.html">Sign-in</a></li>
             </ul>
 
             </div>
         </nav>
         <FissionButton />
+        <RaisedButtonExampleSimple />
         <CodeEditor />
         <div id ="fissbutt"></div>
         <div id = "buttonbox"></div>
-        <div id="sidemenu"></div>
+       <PopoverExampleAnimation />
      
 
 
