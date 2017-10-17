@@ -21,9 +21,9 @@ class CodeEditor extends Component {
     return (
       <ReactAce
         mode="javascript"
-        theme="eclipse"
+        theme="tomorrow_night_eighties"
         onChange={this.onChange}
-        style={{ height: '400px' }}
+        style={{ height: '700px' }}
         ref={instance => { this.ace = instance; }} // Let's put things into scope  
       />
     );

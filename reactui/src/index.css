@@ -12,7 +12,7 @@ body {
 
 
 
-.MuiButton-root-1{
+.MuiButton-root-25{
 
 	border: black solid 5px;
 }
@@ -31,7 +31,7 @@ body {
 
 }
 /*play with the columns here so it's on the same row*/
-#sidemenu{
+#sidebarmenu{
 
 	border:  blue solid 5px;
 	height: 700px;
