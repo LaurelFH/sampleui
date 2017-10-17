@@ -59,19 +59,22 @@ class App extends Component {
            </div>
        </nav>
 
-
-        <div id="infobox"><FissionButton />This is info on how to use the app</div>
-  
-           <Grid>
+        <div id="infobox"><FissionButton />This is info on how to use the app;  there will be info here explaining it blah</div>
+         
+         <Grid>
           <Row> 
           <Col  xs={12} md={8}>
         <CodeEditor />
+        <div>
+        You can add components from the menu below to the editor via copy/paste
+        </div>
         </Col>
-        <Col xs={6} md={4}> <PopoverExampleAnimation /><div id="sidebarmenu"></div>
+        <Col xs={6} md={4}> <PopoverExampleAnimation /><div id="sidebarmenu">This should be a popoverside menu</div>
         </Col>
         </Row>
  
  <Row>
+<Col xs={6} md={4}>  <ButtonExample /></Col>
 <Col xs={6} md={4}>  <ButtonExample /></Col>
 <Col xs={6} md={4}>  <ButtonExample /></Col>
 <Col xs={6} md={4}>  <ButtonExample /></Col>
