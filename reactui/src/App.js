@@ -46,8 +46,6 @@ class App extends Component {
       //</Router>
 
 
-
-
   render() {
     return (
       <div className="App">
@@ -72,10 +70,19 @@ class App extends Component {
         <Col xs={6} md={4}> <PopoverExampleAnimation /><div id="sidebarmenu"></div>
         </Col>
         </Row>
+ 
+ <Row>
+<Col xs={6} md={4}>  <ButtonExample /></Col>
+<Col xs={6} md={4}>  <ButtonExample /></Col>
+<Col xs={6} md={4}>  <ButtonExample /></Col>
+
+ </Row>
+
+
         </Grid>
 
 
-         <ButtonExample />
+       
        
                   </div>
                                    
