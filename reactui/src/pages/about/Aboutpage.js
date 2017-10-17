@@ -19,6 +19,7 @@ const Aboutpage = () =>
       <Row>
         <Col size="md-12">
           <p>
+          ABOUT PAGE WOOOO!
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             aliquet diam tortor, id consequat mauris ullamcorper eu. Orci varius
             natoque penatibus et magnis dis parturient montes, nascetur

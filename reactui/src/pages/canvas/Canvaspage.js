@@ -13,7 +13,7 @@ const Canvaspage = () =>
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
-          <h1>Welcome To Fission</h1>
+          <h1>Welcome To Fission:  Your workspace</h1>
         </Col>
       </Row>
       <Row>
