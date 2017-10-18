@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Button from 'react-bootstrap/lib/Button';
+import ButtonGroup from 'react-bootstrap/lib/ButtonGroup';
 import Well from 'react-bootstrap/lib/Well';
 import Fade from 'react-bootstrap/lib/Fade';
 
@@ -15,9 +15,9 @@ class ButtonExample extends Component {
   render() {
     return (
       <div>
-        <Button bsStyle = "danger" onClick={()=> this.setState({ open: !this.state.open })}>
-          click
-        </Button>
+        <ButtonGroup vertical block bsStyle = "danger" onClick={()=> this.setState({ open: !this.state.open })}>
+          Choose your Component
+        </ButtonGroup>
         <Fade in={this.state.open}>
           <div>
             <Well>

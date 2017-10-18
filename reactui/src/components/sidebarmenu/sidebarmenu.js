@@ -1,61 +1,35 @@
 import React from 'react';
-import Button from 'material-ui/Button';
-import Popover, {PopoverAnimationVertical} from 'material-ui/Popover';
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/Menu/MenuItem';
+import styles from './sidebarmenu.css';
+import {Nav, NavItem, Navbar, NavDropdown, MenuItem, Glyphicon} from 'react-bootstrap';
 
+export default React.createClass( {
 
-class PopoverExampleAnimation extends React.Component {
+    render: function() {
+        return <div id="sidebar-menu" className={styles.sideBarMenuContainer}>
+            <Navbar fluid className={styles.sidebar} inverse >
 
-  constructor(props) {
-    super(props);
+                <Navbar.Header>
+                    <Navbar.Brand>
+                        <a href="/">User Name</a>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                </Navbar.Header>
 
-    this.state = {
-      open: true,
-    };
-  }
+                <Navbar.Collapse>
+                    <Navbar.Text className={styles.userMenu}>
+                        <Navbar.Link href="#"><Glyphicon glyph="home"/></Navbar.Link>
+                        <Navbar.Link href="#"><Glyphicon glyph="log-out"/></Navbar.Link>
+                    </Navbar.Text>
+                    <Nav>
+                        <NavDropdown eventKey={1} title="Item 1">
+                            <MenuItem eventKey={1.1} href="#">Item 1.1</MenuItem>
+                        </NavDropdown>
+                        <NavItem eventKey={2}>Item 2</NavItem>
+                        <NavItem eventKey={3}>Item 3</NavItem>
+                    </Nav>
+                </Navbar.Collapse>
 
-  handleTouchTap = (event) => {
-    // This prevents ghost click.
-    event.preventDefault();
-
-    this.setState({
-      open: true,
-      anchorEl: event.currentTarget,
-    });
-  };
-
-  handleRequestClose = () => {
-    this.setState({
-      open: false,
-    });
-  };
-
-  render() {
-    return (
-      <div>
-        <Button
-          onClick={this.handleTouchTap}
-          label="Click me"
-        />
-        <Popover
-          open={this.state.open}
-          anchorEl={this.state.anchorEl}
-          anchorOrigin={{horizontal: 'left', vertical: 'bottom'}}
-          targetOrigin={{horizontal: 'left', vertical: 'top'}}
-          onRequestClose={this.handleRequestClose}
-          animation={PopoverAnimationVertical}
-        >
-          <Menu>
-            <MenuItem primaryText="Refresh" />
-            <MenuItem primaryText="Help &amp; feedback" />
-            <MenuItem primaryText="Settings" />
-            <MenuItem primaryText="Sign out" />
-          </Menu>
-        </Popover>
-      </div>
-    );
-  }
-}
-
-export default PopoverExampleAnimation;
+            </Navbar>
+        </div>;
+    }
+});
