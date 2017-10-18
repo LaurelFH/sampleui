@@ -7,16 +7,44 @@ import CodeEditor from "./components/editor";
 import FissionButton from "./components/fissionButton";
 import PopoverExampleAnimation from "./components/sidebarmenu";
 import ButtonExample from "./components/compbuttons";
-import Grid from "react-bootstrap/lib/Grid";
-import Col from "react-bootstrap/lib/Col";
-import Row from "react-bootstrap/lib/Row";
+//import Grid from "react-bootstrap/lib/Grid";
+//import Col from "react-bootstrap/lib/Col";
+//import Row from "react-bootstrap/lib/Row";
 //import Navbar from "./components/navbar";
-import Navbar from "react-bootstrap/lib/Navbar";
-import NavItem from "react-bootstrap/lib/NavItem";
+//import Navbar from "react-bootstrap/lib/Navbar";
+//import NavItem from "react-bootstrap/lib/NavItem";
+import { Button, Card } from 'react-materialize';
+import { Grid, Row, Col } from 'react-material-responsive-grid';
+//import {cyan500} from 'material-ui/styles/colors';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import createMuiTheme from 'material-ui/styles/createMuiTheme';
+import AppBar from 'material-ui/AppBar';
+//import DragSource from "./components/draginfo";
+//import AccessAlarmIcon from "material-ui-icons/AccessAlarmIcon";
 //import Canvaspage from "./src/pages";
 //import Aboutpage from "./src/pages";
 //import FlatButton from 'material-ui/FlatButton';
+// ES6
+//import Draggable from 'react-draggable'; // The default
+//import {DraggableCore} from 'react-draggable'; // <DraggableCore>
+//import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same time
 
+// CommonJS
+//let Draggable = require('react-draggable');
+//let DraggableCore = Draggable.DraggableCore;
+
+
+ // <Draggable
+ //        axis="x"
+ //        handle=".handle"
+ //        defaultPosition={{x: 0, y: 0}}
+ //        position={null}
+ //        grid={[25, 25]}
+ //        onStart={this.handleStart}
+ //        onDrag={this.handleDrag}
+ //        onStop={this.handleStop}>
+ // <div id="example1"> let's try this out</div>
+ // </Draggable>
 
 
 
@@ -45,10 +73,28 @@ class App extends Component {
 
       //</Switch>
       //</Router>
+      //implementing DnD eventlistener in Jquery 
+      //$("#editor").droppable({
+//         drop: function (e) {
+//             var draggedElement = e.draggable.currentTarget;
+//             var text = $.trim(draggedElement.text());
+//             console.log("Dragged Element: "+text);
+//         }
+// });
+
+eventLogger = (e: MouseEvent, data: Object) => {
+    console.log('Event: ', e);
+    console.log('Data: ', data);
+  };
+
 
 
   render() {
     return (
+
+
+
+
       <div className="App">
 
         <nav>
@@ -61,8 +107,8 @@ class App extends Component {
        </nav>
 
         <div id="infobox"><FissionButton />This is info on how to use the app;  there will be info here explaining it blah</div>
-         
          <Grid>
+      
           <Row> 
           <Col  xs={12} md={8}>
         <CodeEditor />
@@ -75,22 +121,22 @@ class App extends Component {
         </Row>
  
  <Row>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
+ 
+
+<Col xs4={4} lg={6}>  <ButtonExample /></Col>
+<Col xs4={4} lg={6}>   <ButtonExample /></Col>
+<Col xs4={4} lg={6}>  <i class="material-icons md-48">web</i></Col>
+<Col xs4={4} lg={6}>   <i class="material-icons md-48">face</i></Col>
+<Col xs4={4} lg={6}>    <i class="material-icons md-48">build</i></Col>
+<Col xs4={4} lg={6}>    <i class="material-icons md-48">featured_play_list</i></Col>
 
 
 
  </Row>
-
-
-        </Grid>
-
+</Grid>
 
        
+
        
                   </div>
                                    
