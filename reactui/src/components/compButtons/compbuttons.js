@@ -15,7 +15,7 @@ class ButtonExample extends Component {
   render() {
     return (
       <div>
-        <Button bsStyle = "success" onClick={()=> this.setState({ open: !this.state.open })}>
+        <Button bsStyle = "danger" onClick={()=> this.setState({ open: !this.state.open })}>
           click
         </Button>
         <Fade in={this.state.open}>
