@@ -14,19 +14,26 @@ import Row from "react-bootstrap/lib/Row";
 import NavbarBrandNew from "./components/navbar";
 import NavItem from "react-bootstrap/lib/NavItem";
 
-
+ import Canvaspage from "./pages/canvas/Canvaspage.js";
+ import Aboutpage from "./pages/about/Aboutpage.js";
 
 class App extends Component {
 
   render() {
     return (
       <div className="App">
+      <Router> 
+      <Switch>
+
+      <Route exact path="/" component={Canvaspage} />
+      <Route exact path="/about" component={Aboutpage} />
+
+
+      </Switch>
+      </Router>
 
         <NavbarBrandNew />
-
-
-
-         
+        
          <Grid>
           <Row> 
           <Col md={6}>
@@ -39,7 +46,7 @@ class App extends Component {
          
         </Col>
         </Row>
-        
+
         <FissionButton />This is info on how to use the app;  there will be info here explaining it blah./n
         You can add components from the menu below to the editor via copy and paste.
  

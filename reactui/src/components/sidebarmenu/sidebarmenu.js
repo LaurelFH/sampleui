@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './sidebarmenu.css';
 import {Nav, NavItem, Navbar, NavDropdown, MenuItem, Glyphicon} from 'react-bootstrap';
 
@@ -11,10 +11,45 @@ import {Nav, NavItem, Navbar, NavDropdown, MenuItem, Glyphicon} from 'react-boot
                         // </NavDropdown>
                         /*can add inverse below like usual outside of {styles.sidebar} inverse*/
 
-export default React.createClass( {
+// export default React.createClass( {
 
-    render: function() {
-        return <div id="sidebar-menu" className={styles.sideBarMenuContainer}>
+//     render: function() {
+//         return <div id="sidebar-menu" className={styles.sideBarMenuContainer}>
+
+//             <Navbar fluid className={styles.sidebar} >
+
+//                 <Navbar.Header>
+//                     <Navbar.Brand>
+//                         <a href="/">Styling</a>
+//                     </Navbar.Brand>
+//                     <Navbar.Toggle />
+//                 </Navbar.Header>
+
+//                 <Navbar.Collapse>
+//                     <Navbar.Text className={styles.userMenu}>
+                        
+//                     </Navbar.Text>
+//                     <Nav>
+
+//                         <NavItem eventKey={2}>Color</NavItem>
+//                         <NavItem eventKey={3}>Font</NavItem>
+//                         <NavItem eventKey={3}>Size</NavItem>
+//                         <NavItem eventKey={3}>Blah</NavItem>
+//                     </Nav>
+//                 </Navbar.Collapse>
+
+//             </Navbar>
+//         </div>;
+//     }
+// });
+
+ 
+class PopoverExampleAnimation extends Component{
+
+    render(){
+
+        return(
+         <div id="sidebar-menu" className={styles.sideBarMenuContainer}>
 
             <Navbar fluid className={styles.sidebar} >
 
@@ -39,6 +74,12 @@ export default React.createClass( {
                 </Navbar.Collapse>
 
             </Navbar>
-        </div>;
+        </div>
+
+        );
+
     }
-});
+}
+
+
+export default PopoverExampleAnimation;

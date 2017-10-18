@@ -1,15 +1,15 @@
 import React from "react";
-import Container from "react-bootstrap/lib/Container";
-import Grid from "react-bootstrap/lib/Grid";
-import Col from "react-bootstrap/lib/Col";
-import Row from "react-bootstrap/lib/Row";
+import Container from "reactstrap/lib/Container";
+//import Grid from "reactstrap/lib/Grid";
+import Col from "reactstrap/lib/Col";
+import Row from "reactstrap/lib/Row";
 
 const Canvaspage = () =>
 <div>
 
       <h1>Fission</h1>
       <h2>Making Your Components, Easier</h2>
-    </div>
+    
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">

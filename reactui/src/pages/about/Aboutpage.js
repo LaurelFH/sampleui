@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "react-bootstrap/lib/Container";
-import Grid from "react-bootstrap/lib/Grid";
-import Col from "react-bootstrap/lib/Col";
-import Row from "react-bootstrap/lib/Row";
+import Container from "reactstrap/lib/Container";
+//import Grid from "reactstrap/lib/Grid";
+import Col from "reactstrap/lib/Col";
+import Row from "reactstrap/lib/Row";
 
 const Aboutpage = () =>
   <div>
