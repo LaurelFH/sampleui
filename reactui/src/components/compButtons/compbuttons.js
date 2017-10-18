@@ -1,23 +1,34 @@
 
-import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
-import {Button, Icon} from 'react-materialize';
+import React, { Component } from 'react';
+import Button from 'react-bootstrap/lib/Button';
+import Well from 'react-bootstrap/lib/Well';
+import Fade from 'react-bootstrap/lib/Fade';
 
 
-const style = {
-  margin: 12,
-};
+class ButtonExample extends Component {
 
-const RaisedButtonExampleSimple = () => (
-  <div>
-    <RaisedButton label="Default" style={style} />
-    <RaisedButton label="Primary" primary={true} style={style} />
-    <RaisedButton label="Secondary" secondary={true} style={style} />
-    <RaisedButton label="Disabled" disabled={true} style={style} />
-    <br />
-    <br />
-    <RaisedButton label="Full width" fullWidth={true} />
-  </div>
-);
+  constructor() {
+    super();
+    this.state = {};
+  }
 
-export default RaisedButtonExampleSimple;
+  render() {
+    return (
+      <div>
+        <Button bsStyle = "danger" onClick={()=> this.setState({ open: !this.state.open })}>
+          click
+        </Button>
+        <Fade in={this.state.open}>
+          <div>
+            <Well>
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </Well>
+          </div>
+        </Fade>
+      </div>
+    );
+  }
+}
+
+export default ButtonExample;
