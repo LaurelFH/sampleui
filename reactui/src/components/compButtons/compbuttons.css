@@ -1,5 +1,7 @@
-.Compbuttons{
+.btn-group, .btn-group-vertical{
 
-	border: red solid 5px;
-	
+ 	color: white;
+  background-color: #26A69A;
+  border-radius: 8px;
+
 }

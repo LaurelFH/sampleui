@@ -5,15 +5,15 @@ import Col from "react-bootstrap/lib/Col";
 import Row from "react-bootstrap/lib/Row";
 
 const Canvaspage = () =>
-  <div>
-    <div backgroundImage="https://i.imgur.com/qkdpN.jpg">
+<div>
+
       <h1>Fission</h1>
-      <h2>Making Components Easier</h2>
+      <h2>Making Your Components, Easier</h2>
     </div>
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
-          <h1>Welcome To Fission:  Your workspace</h1>
+          <h1>Welcome To Fission</h1>
         </Col>
       </Row>
       <Row>

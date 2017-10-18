@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import CodeEditor from "./components/editor";
@@ -24,27 +24,30 @@ class App extends Component {
 
         <NavbarBrandNew />
 
-        <div id="infobox"><FissionButton />This is info on how to use the app;  there will be info here explaining it blah</div>
+
+
          
          <Grid>
           <Row> 
-          <Col  xs={12} md={8}>
+          <Col md={6}>
         <CodeEditor />
-        <div>
-        You can add components from the menu below to the editor via copy and paste.
-        </div>
+  
         </Col>
-        <Col xs={6} md={4}> <PopoverExampleAnimation /><div id="sidebarmenu">This should be a popoverside menu</div>
+
+        <Col md={6}>
+        <PopoverExampleAnimation />
+         
         </Col>
         </Row>
+        
+        <FissionButton />This is info on how to use the app;  there will be info here explaining it blah./n
+        You can add components from the menu below to the editor via copy and paste.
  
  <Row>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
+<Col md={4}>  <ButtonExample /></Col>
+<Col md={4}>  <ButtonExample /></Col>
+<Col md={4}>  <ButtonExample /></Col>
+
  </Row>
 
 

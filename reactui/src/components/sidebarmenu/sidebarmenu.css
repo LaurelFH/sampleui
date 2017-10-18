@@ -1,6 +1,7 @@
 .sideBarMenuContainer {
     position: fixed;
     height: 100%;
+     background-color: #26A69A;
 }
 
 .userMenu {
@@ -19,6 +20,7 @@ nav.sidebar :global(.navbar-brand) :global(.glyphicon) {
 /*Remove rounded coners*/
 nav.sidebar.:global(navbar) {
     border-radius: 0px;
+
 }
 
 nav.sidebar {
@@ -85,12 +87,13 @@ nav.sidebar {
 
     /*gives sidebar width/height*/
     nav.sidebar {
-        width: 200px;
+        width: 500px;
         height: 100%;
         margin-left: -160px;
         float: left;
         z-index: 8000;
         margin-bottom: 0px;
+        background-color: red;
     }
 
     /*give sidebar 100% width;*/

@@ -4,7 +4,7 @@ import {Button, Icon} from 'react-materialize'
 
 const FissionButton= () => (
 	<Button waves='light' label="Full width" fullWidth={true}>
-		<Icon>thumb_up</Icon>
+		<Icon>thumb_up</Icon> Fuse Your Work
 	</Button>
 )
 
