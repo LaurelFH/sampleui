@@ -1,29 +1,35 @@
-// import React, { Component} from "react";
-// import NavItem from "react-bootstrap/lib/NavItem";
-// import Navbar from "react-bootstrap/lib/Navbar";
+import React, { Component} from "react";
+import NavItem from "react-bootstrap/lib/NavItem";
+import Navbar from "react-bootstrap/lib/Navbar";
+import NavbarBrand from "react-bootstrap/lib/NavbarBrand";
+import NavDropdown from "react-bootstrap/lib/NavDropdown";
+import MenuItem from "react-bootstrap/lib/MenuItem";
+import Nav from "react-bootstrap/lib/Nav";
 
-// class Navbar extends Component{
+class NavbarBrandNew extends Component{
+
+  handleSelect(eventKey) {
+    //event.preventDefault();
+    alert(`selected ${eventKey}`);
+  }
+
+  render() {
+    return (
+      <Nav bsStyle="tabs" activeKey="1" onSelect={this.handleSelect}>
+        <NavItem eventKey="1" href="/home">NavItem 1 content</NavItem>
+        <NavItem eventKey="2" title="Item">NavItem 2 content</NavItem>
+        <NavItem eventKey="3" disabled>NavItem 3 content</NavItem>
+        <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
+          <MenuItem eventKey="4.1">Action</MenuItem>
+          <MenuItem eventKey="4.2">Another action</MenuItem>
+          <MenuItem eventKey="4.3">Something else here</MenuItem>
+          <MenuItem divider />
+          <MenuItem eventKey="4.4">Separated link</MenuItem>
+        </NavDropdown>
+      </Nav>
+    );
+  }
+}
 
 
-// render(){
-
-// return(
-
-
-// <Navbar brand='logo' right>
-// 	<NavItem href='Aboutpage.js'>Welcome</NavItem>
-// 	<NavItem href='Canvaspage.js'>Components</NavItem>
-// </Navbar>
-
-// 	);
-
-
-// }
-	
-
-// 	}
-
-
-
-
-// export default Navbar;
+export default NavbarBrandNew;
