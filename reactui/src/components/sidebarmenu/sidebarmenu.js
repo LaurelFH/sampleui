@@ -3,6 +3,7 @@ import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 //import RaisedButton from 'material-ui/RaisedButton';
 import Button from 'react-materialize/lib/Button';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 class PopoverExampleAnimation extends React.Component {
 
 
@@ -15,6 +16,7 @@ class PopoverExampleAnimation extends React.Component {
 
   render() {
     return (
+    	<MuiThemeProvider>
       <div>
         <Button
           label="Toggle Drawer"
@@ -24,6 +26,7 @@ class PopoverExampleAnimation extends React.Component {
           <AppBar title="AppBar" />
         </Drawer>
       </div>
+      </MuiThemeProvider>
     );
   }
 }
