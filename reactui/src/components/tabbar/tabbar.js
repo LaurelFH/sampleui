@@ -41,8 +41,9 @@ export default class Tabbar extends React.Component {
         >
 
           <Tab label="About" value={0} containerElement={<Link to ="/about"/>} />
-          <Tab label="Your Canvas" value={1} containerElement={<Link to ="/canvas"/>} />
-          <Tab label="Preview" value={2} containerElement={<Link to ="/preview"/>} />
+           <Tab label="Preview" value={1} containerElement={<Link to ="/preview"/>} />
+          <Tab label="Your Canvas" value={2} containerElement={<Link to ="/canvas"/>} />
+         
         </Tabs>
 
         </Router>
