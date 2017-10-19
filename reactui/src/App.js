@@ -13,7 +13,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 
-//import Grid from "reactstrap/lib/Grid";
+import Container from "reactstrap/lib/Container";
 import Col from "reactstrap/lib/Col";
 import Row from "reactstrap/lib/Row";
 import NavbarBrandNew from "./components/navbar";
@@ -32,45 +32,38 @@ class App extends Component {
     return (
      <MuiThemeProvider muiTheme={getMuiTheme()}>
       <div className="App">
+
       <Router> 
       <Switch>
-
       <Route exact path="/" component={Canvaspage} />
       <Route exact path="/about" component={Aboutpage} />
-
-
       </Switch>
       </Router>
 
-        <NavbarBrandNew />
-        
-         
-          <Row> 
-          <Col md={6}>
-        <CodeEditor />
-        <Newcompomenu />
-  
-        </Col>
+      <NavbarBrandNew />
+        <Container>
 
-        <Col md={6}>
+          <Row> 
+          <Col xs="6">
+       
+        <Newcompomenu />
+          </Col>
+
+         <Col xs="6">
         <Sidebarmenunew />
-         
-        </Col>
+         </Col>
         </Row>
 
-        <FissionButton />This is info on how to use the app;  there will be info here explaining it blah./n
+        <FissionButton />This is info on how to use the app;  there will be info here explaining it./n
         You can add components from the menu below to the editor via copy and paste.
  
  <Row>
 
 
- </Row>
+ </Row>    
 
 
-        
-
-
-       
+       </Container>
        
                   </div>
                   </MuiThemeProvider>

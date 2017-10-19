@@ -1,6 +1,7 @@
 import ReactAce from 'react-ace-editor';
 import React, { Component } from 'react';
  import "./editor.css";
+ 
 class CodeEditor extends Component {
   
   constructor() {
@@ -17,6 +18,7 @@ class CodeEditor extends Component {
 
   render() {
     return (
+      
       <ReactAce
         mode="javascript"
         theme="github"

@@ -3,7 +3,7 @@ import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
 
-/*this will be the menu where people can select their components*/
+/*this will be the menu where people can select their components' styling*/
 export default class Newcompomenu extends React.Component {
 
   constructor(props) {
@@ -17,11 +17,10 @@ export default class Newcompomenu extends React.Component {
     return (
       <div>
         <RaisedButton
-          label="Toggle Drawer"
-          onClick={this.handleToggle}
+          label="Styling" fullWidth={true}    onClick={this.handleToggle}
         />
-        <Drawer width={200} openSecondary={true} open={this.state.open} >
-          <AppBar title="AppBar" />
+        <Drawer width={400} openSecondary={true} open={this.state.open} >
+          <AppBar title="Styling Bench" />
         </Drawer>
       </div>
     );

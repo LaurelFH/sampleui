@@ -7,9 +7,8 @@ class FissionButton extends Component{
 render(){
 	return(
 
-<RaisedButton waves='light' label="Full width" fullWidth={true}>
-		 Fuse Your Work
-	</RaisedButton>
+<RaisedButton waves='light' label="Fuse It" fullWidth={true}>
+		</RaisedButton>
 
 		);
 
