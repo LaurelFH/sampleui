@@ -18,9 +18,10 @@ import Col from "reactstrap/lib/Col";
 import Row from "reactstrap/lib/Row";
 import NavbarBrandNew from "./components/navbar";
 import NavItem from "reactstrap/lib/NavItem";
-
+//importing page routes
  import Canvaspage from "./pages/canvas/Canvaspage.js";
  import Aboutpage from "./pages/about/Aboutpage.js";
+ import Previewpage from "./pages/preview/Previewpage.js";
 
 //importing the sidebar menus
  import Sidebarmenunew from "./components/sidebarmenunew";
@@ -32,15 +33,17 @@ class App extends Component {
     return (
      <MuiThemeProvider muiTheme={getMuiTheme()}>
       <div className="App">
+      <NavbarBrandNew />
 
       <Router> 
       <Switch>
-      <Route exact path="/" component={Canvaspage} />
       <Route exact path="/about" component={Aboutpage} />
+      <Route exact path="/canvas" component={Canvaspage} />
+      <Route exact path="/preview" component={Previewpage} />
       </Switch>
       </Router>
 
-      <NavbarBrandNew />
+    
         <Container>
 
           <Row> 
