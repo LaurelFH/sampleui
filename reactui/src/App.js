@@ -1,98 +1,79 @@
 import React, { Component } from 'react';
-//import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import CodeEditor from "./components/editor";
-// import AceEditor from "./components/editor";
 import FissionButton from "./components/fissionButton";
-import PopoverExampleAnimation from "./components/sidebarmenu";
-import ButtonExample from "./components/compbuttons";
-import Grid from "react-bootstrap/lib/Grid";
-import Col from "react-bootstrap/lib/Col";
-import Row from "react-bootstrap/lib/Row";
-//import Navbar from "./components/navbar";
-import Navbar from "react-bootstrap/lib/Navbar";
-import NavItem from "react-bootstrap/lib/NavItem";
-//import Canvaspage from "./src/pages";
-//import Aboutpage from "./src/pages";
-//import FlatButton from 'material-ui/FlatButton';
+//import PopoverExampleAnimation from "./components/sidebarmenu";
+//import ButtonExample from "./components/compbuttons";
 
 
+import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 
+//import Grid from "reactstrap/lib/Grid";
+import Col from "reactstrap/lib/Col";
+import Row from "reactstrap/lib/Row";
+import NavbarBrandNew from "./components/navbar";
+import NavItem from "reactstrap/lib/NavItem";
+
+ import Canvaspage from "./pages/canvas/Canvaspage.js";
+ import Aboutpage from "./pages/about/Aboutpage.js";
+
+//importing the sidebar menus
+ import Sidebarmenunew from "./components/sidebarmenunew";
+ import Newcompomenu from "./components/newcompomenu";
 
 class App extends Component {
-//would I have to set this to the buttons array like in the example?
-//state={ components};
-
-//
-//
-//testing Navbar 
-// <Navbar brand='logo' right>
-//   <NavItem href='Aboutpage.js'>Welcome</NavItem>
-//   <NavItem href='Canvaspage.js'>Components</NavItem>
-// </Navbar>
-
-
-//testing old routing
-
-      //<Router>
-      //<Navbar />
-      //<Switch>
-
-      //<Route exact path="/" component={Aboutpage} />
-      //<Route exact path="/canvas" component={Canvaspage} />
-
-      //</Switch>
-      //</Router>
-
 
   render() {
     return (
+     <MuiThemeProvider muiTheme={getMuiTheme()}>
       <div className="App">
+      <Router> 
+      <Switch>
 
-        <nav>
-          <div className="nav-wrapper">
-            <a href="www.google.com" className="brand-logo">FISSION</a>
-           <ul id="nav-mobile" className="right hide-on-med-and-down">
-             <li><a href="collapsible.html">Sign-in</a></li>
-           </ul>
-           </div>
-       </nav>
+      <Route exact path="/" component={Canvaspage} />
+      <Route exact path="/about" component={Aboutpage} />
 
-        <div id="infobox"><FissionButton />This is info on how to use the app;  there will be info here explaining it blah</div>
+
+      </Switch>
+      </Router>
+
+        <NavbarBrandNew />
+        
          
-         <Grid>
           <Row> 
-          <Col  xs={12} md={8}>
+          <Col md={6}>
         <CodeEditor />
-        <div>
-        You can add components from the menu below to the editor via copy and paste.
-        </div>
+        <Newcompomenu />
+  
         </Col>
-        <Col xs={6} md={4}> <PopoverExampleAnimation /><div id="sidebarmenu">This should be a popoverside menu</div>
+
+        <Col md={6}>
+        <Sidebarmenunew />
+         
         </Col>
         </Row>
+
+        <FissionButton />This is info on how to use the app;  there will be info here explaining it blah./n
+        You can add components from the menu below to the editor via copy and paste.
  
  <Row>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-<Col xs={6} md={4}>  <ButtonExample /></Col>
-
 
 
  </Row>
 
 
-        </Grid>
+        
 
 
        
        
                   </div>
+                  </MuiThemeProvider>
                                    
     );
   }

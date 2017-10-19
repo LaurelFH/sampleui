@@ -1,61 +1,85 @@
-import React from 'react';
-import Button from 'material-ui/Button';
-import Popover, {PopoverAnimationVertical} from 'material-ui/Popover';
-import Menu from 'material-ui/Menu';
-import MenuItem from 'material-ui/Menu/MenuItem';
+import React, { Component } from 'react';
+import styles from './sidebarmenu.css';
+//import {Nav, NavItem, Navbar, NavDropdown, MenuItem, Glyphicon} from 'react-bootstrap';
 
 
-class PopoverExampleAnimation extends React.Component {
 
-  constructor(props) {
-    super(props);
+// <Navbar.Link href="#"><Glyphicon glyph="home"/></Navbar.Link>
+//                         <Navbar.Link href="#"><Glyphicon glyph="log-out"/></Navbar.Link>
+                        // <NavDropdown eventKey={1} title="Item 1">
+                        //     <MenuItem eventKey={1.1} href="#">Item 1.1</MenuItem>
+                        // </NavDropdown>
+                        /*can add inverse below like usual outside of {styles.sidebar} inverse*/
 
-    this.state = {
-      open: true,
-    };
-  }
+// export default React.createClass( {
 
-  handleTouchTap = (event) => {
-    // This prevents ghost click.
-    event.preventDefault();
+//     render: function() {
+//         return <div id="sidebar-menu" className={styles.sideBarMenuContainer}>
 
-    this.setState({
-      open: true,
-      anchorEl: event.currentTarget,
-    });
-  };
+//             <Navbar fluid className={styles.sidebar} >
 
-  handleRequestClose = () => {
-    this.setState({
-      open: false,
-    });
-  };
+//                 <Navbar.Header>
+//                     <Navbar.Brand>
+//                         <a href="/">Styling</a>
+//                     </Navbar.Brand>
+//                     <Navbar.Toggle />
+//                 </Navbar.Header>
 
-  render() {
-    return (
-      <div>
-        <Button
-          onClick={this.handleTouchTap}
-          label="Click me"
-        />
-        <Popover
-          open={this.state.open}
-          anchorEl={this.state.anchorEl}
-          anchorOrigin={{horizontal: 'left', vertical: 'bottom'}}
-          targetOrigin={{horizontal: 'left', vertical: 'top'}}
-          onRequestClose={this.handleRequestClose}
-          animation={PopoverAnimationVertical}
-        >
-          <Menu>
-            <MenuItem primaryText="Refresh" />
-            <MenuItem primaryText="Help &amp; feedback" />
-            <MenuItem primaryText="Settings" />
-            <MenuItem primaryText="Sign out" />
-          </Menu>
-        </Popover>
-      </div>
-    );
-  }
+//                 <Navbar.Collapse>
+//                     <Navbar.Text className={styles.userMenu}>
+                        
+//                     </Navbar.Text>
+//                     <Nav>
+
+//                         <NavItem eventKey={2}>Color</NavItem>
+//                         <NavItem eventKey={3}>Font</NavItem>
+//                         <NavItem eventKey={3}>Size</NavItem>
+//                         <NavItem eventKey={3}>Blah</NavItem>
+//                     </Nav>
+//                 </Navbar.Collapse>
+
+//             </Navbar>
+//         </div>;
+//     }
+// });
+
+ 
+class PopoverExampleAnimation extends Component{
+
+    render(){
+
+        return(
+         <div id="sidebar-menu" className={styles.sideBarMenuContainer}>
+
+            <Navbar fluid className={styles.sidebar} >
+
+                <Navbar.Header>
+                    <Navbar.Brand>
+                        <a href="/">Styling</a>
+                    </Navbar.Brand>
+                    <Navbar.Toggle />
+                </Navbar.Header>
+
+                <Navbar.Collapse>
+                    <Navbar.Text className={styles.userMenu}>
+                        
+                    </Navbar.Text>
+                    <Nav>
+
+                        <NavItem eventKey={2}>Color</NavItem>
+                        <NavItem eventKey={3}>Font</NavItem>
+                        <NavItem eventKey={3}>Size</NavItem>
+                        <NavItem eventKey={3}>Blah</NavItem>
+                    </Nav>
+                </Navbar.Collapse>
+
+            </Navbar>
+        </div>
+
+        );
+
+    }
 }
+
 
 export default PopoverExampleAnimation;

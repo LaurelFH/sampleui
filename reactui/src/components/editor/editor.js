@@ -1,8 +1,6 @@
-//old code
-
 import ReactAce from 'react-ace-editor';
 import React, { Component } from 'react';
- 
+ import "./editor.css";
 class CodeEditor extends Component {
   
   constructor() {
@@ -21,10 +19,13 @@ class CodeEditor extends Component {
     return (
       <ReactAce
         mode="javascript"
-        theme="tomorrow_night_eighties"
+        theme="github"
         onChange={this.onChange}
+        
         style={{ height: '700px' }}
         ref={instance => { this.ace = instance; }} // Let's put things into scope  
+        
+        
       />
     );
   }

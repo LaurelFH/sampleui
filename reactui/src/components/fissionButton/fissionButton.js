@@ -1,12 +1,20 @@
-import React from "react";
+import React, { Component } from 'react';
 import "./fissionButton.css";
-import {Button, Icon} from 'react-materialize'
+import RaisedButton from 'material-ui/RaisedButton';
 
-const FissionButton= () => (
-	<Button waves='light' label="Full width" fullWidth={true}>
-		<Icon>thumb_up</Icon>
-	</Button>
-)
+class FissionButton extends Component{
 
+render(){
+	return(
+
+<RaisedButton waves='light' label="Full width" fullWidth={true}>
+		 Fuse Your Work
+	</RaisedButton>
+
+		);
+
+	}
+
+} 
 
 export default FissionButton;
