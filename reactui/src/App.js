@@ -4,23 +4,33 @@ import logo from './logo.svg';
 import './App.css';
 import CodeEditor from "./components/editor";
 import FissionButton from "./components/fissionButton";
-import PopoverExampleAnimation from "./components/sidebarmenu";
-import ButtonExample from "./components/compbuttons";
+//import PopoverExampleAnimation from "./components/sidebarmenu";
+//import ButtonExample from "./components/compbuttons";
 
 
-import Grid from "react-bootstrap/lib/Grid";
-import Col from "react-bootstrap/lib/Col";
-import Row from "react-bootstrap/lib/Row";
+import ReactDOM from 'react-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+
+
+//import Grid from "reactstrap/lib/Grid";
+import Col from "reactstrap/lib/Col";
+import Row from "reactstrap/lib/Row";
 import NavbarBrandNew from "./components/navbar";
-import NavItem from "react-bootstrap/lib/NavItem";
+import NavItem from "reactstrap/lib/NavItem";
 
  import Canvaspage from "./pages/canvas/Canvaspage.js";
  import Aboutpage from "./pages/about/Aboutpage.js";
+
+//importing the sidebar menus
+ import Sidebarmenunew from "./components/sidebarmenunew";
+ import Newcompomenu from "./components/newcompomenu";
 
 class App extends Component {
 
   render() {
     return (
+     <MuiThemeProvider muiTheme={getMuiTheme()}>
       <div className="App">
       <Router> 
       <Switch>
@@ -34,15 +44,16 @@ class App extends Component {
 
         <NavbarBrandNew />
         
-         <Grid>
+         
           <Row> 
           <Col md={6}>
         <CodeEditor />
+        <Newcompomenu />
   
         </Col>
 
         <Col md={6}>
-        <PopoverExampleAnimation />
+        <Sidebarmenunew />
          
         </Col>
         </Row>
@@ -51,19 +62,18 @@ class App extends Component {
         You can add components from the menu below to the editor via copy and paste.
  
  <Row>
-<Col md={4}>  <ButtonExample /></Col>
-<Col md={4}>  <ButtonExample /></Col>
-<Col md={4}>  <ButtonExample /></Col>
+
 
  </Row>
 
 
-        </Grid>
+        
 
 
        
        
                   </div>
+                  </MuiThemeProvider>
                                    
     );
   }
