@@ -4,47 +4,42 @@ import Container from "reactstrap/lib/Container";
 import Col from "reactstrap/lib/Col";
 import Row from "reactstrap/lib/Row";
 //import NavbarBrandNew from "../components/navbar";
+ import Sidebarmenunew from "../../components/sidebarmenunew";
+ import Newcompomenu from "../../components/newcompomenu";
+//import FissionButton from "../../components/fissionButton";
 
 const Canvaspage = () =>
-<div>
-
-      <h1>Fission</h1>
-      <h2>Making Your Components, Easier</h2>
+<div>     
     
     <Container style={{ marginTop: 30 }}>
-      <Row>
-        <Col size="md-12">
-          <h1>Welcome To Fission</h1>
-        </Col>
-      </Row>
-      <Row>
         <Col size="md-12">
           <p>
- canvas page yay!!!
+ Your canvas page, a space to preview and style your final selected components before creating a "fission" of your work
           </p>
           
+           <Row> 
+          <Col xs="6">
+     
+        <Newcompomenu />
+          </Col>
+
+        </Row>
+
+ 
+ <Row>
+<Col xs="6">
+        <Sidebarmenunew />
+
+</Col>
+
+ </Row>    
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-        </Col>
-      </Row>
+        
+    </Col>
     </Container>
   </div>;
 
