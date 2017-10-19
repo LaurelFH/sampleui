@@ -45,7 +45,7 @@ class App extends Component {
 
           <Row> 
           <Col xs="6">
-        <CodeEditor />
+       
         <Newcompomenu />
           </Col>
 
