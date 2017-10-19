@@ -22,8 +22,8 @@ class NavbarBrandNew extends Component{
          <NavDropdown eventKey="4" title="Dropdown" id="nav-dropdown">
           <MenuItem eventKey="4.1">About</MenuItem>
           <MenuItem eventKey="4.2">Log-in</MenuItem>
-          <MenuItem divider />
-          <MenuItem eventKey="4.4">Separated link</MenuItem>
+          // <MenuItem divider />
+          // <MenuItem eventKey="4.4">Separated link</MenuItem>
         </NavDropdown>
       </Nav>
     );
