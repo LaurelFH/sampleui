@@ -4,18 +4,22 @@ import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
 
 /*this will be the menu where people can select their components' styling*/
-export default class Newcompomenu extends React.Component {
+class Newcompomenu extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {open: false};
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false
+        };
+    }
 
-  handleToggle = () => this.setState({open: !this.state.open});
+    handleToggle = () => this.setState({
+        open: !this.state.open
+    });
 
-  render() {
-    return (
-      <div>
+    render() {
+        return (
+            <div>
         <RaisedButton
           label="Styling" fullWidth={true}    onClick={this.handleToggle}
         />
@@ -23,6 +27,8 @@ export default class Newcompomenu extends React.Component {
           <AppBar title="Styling Bench" />
         </Drawer>
       </div>
-    );
-  }
+        );
+    }
 }
+
+export default Newcompomenu;

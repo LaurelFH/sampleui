@@ -1,1 +1,1 @@
-export { default } from "./fissionButton";
+export { default } from "./FissionButton";
