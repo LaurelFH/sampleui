@@ -3,13 +3,20 @@ import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 import AppBar from 'material-ui/AppBar';
-import CodeEditor from '../editor';
+//import CodeEditor from '../editor';
 
 //set up the Drag and Drop tool
 import ReactDOM from 'react-dom';
 //import Draggable from 'react-draggable'; // The default
 import { Draggable, Droppable } from 'react-drag-and-drop';
 
+
+/*<Droppable 
+types ={['usercompo']} 
+onDrop = {this.onDrop.bind(this)}>
+<CodeEditor />
+
+</Droppable>*/
 /*this will be th emenu where people can add their commoments-- or should I switch with newcopmomenu*/
 export default class Sidebarmenunew extends React.Component {
 
@@ -36,12 +43,7 @@ export default class Sidebarmenunew extends React.Component {
           <Draggable type ="notcompo" data ="notcool"><span><MenuItem>Component 4</MenuItem></span></Draggable>
         </Drawer>
 
-<Droppable 
-types ={['usercompo']} 
-onDrop = {this.onDrop.bind(this)}>
-<CodeEditor />
 
-</Droppable>
       </div>
 
       );

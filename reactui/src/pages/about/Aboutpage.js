@@ -3,7 +3,8 @@ import Container from "reactstrap/lib/Container";
 //import Grid from "reactstrap/lib/Grid";
 import Col from "reactstrap/lib/Col";
 import Row from "reactstrap/lib/Row";
-
+//import NavbarBrandNew from "../components/navbar";
+//import Jumbotron from "reactstrap/lib/Jumbotron";
 const Aboutpage = () =>
   <div>
     <div backgroundImage="https://fthmb.tqn.com/MxQws4FSM1dNTMb1u5fexkvF-yI=/4016x2479/filters:fill(auto,1)/atom-splitting-in-nuclear-fission-587169643-5792680a3df78c1734990723.jpg">
@@ -13,7 +14,7 @@ const Aboutpage = () =>
     <Container style={{ marginTop: 30 }}>
       <Row>
         <Col size="md-12">
-          <h1>Welcome To Fission</h1>
+          
         </Col>
       </Row>
       <Row>
