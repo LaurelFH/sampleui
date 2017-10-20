@@ -3,7 +3,7 @@ import {Tabs, Tab} from 'material-ui/Tabs';
 // Get this package from https://github.com/oliviertassinari/react-swipeable-views
 //import SwipeableViews from 'react-swipeable-views';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+//import "./tabbar.css";
 
 
 /*these go after the classing router tag and before the /div
@@ -59,8 +59,8 @@ export default class Tabbar extends React.Component {
 
           <Tab label="About" value={0} containerElement={<Link to ="/about"/>} />
           <Tab label="Your Canvas" value={1} containerElement={<Link to ="/canvas"/>} />
-           <Tab label="Preview" value={2} containerElement={<Link to ="/preview"/>} />
-          
+           <Tab label="Reactor" value={2} containerElement={<Link to ="/reactor"/>} />
+          <Tab label="Login" value={3} containerElement={<Link to ="/login"/>} />
          
         </Tabs>
 

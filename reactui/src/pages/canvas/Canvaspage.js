@@ -4,9 +4,11 @@ import Container from "reactstrap/lib/Container";
 import Col from "reactstrap/lib/Col";
 import Row from "reactstrap/lib/Row";
 //import NavbarBrandNew from "../components/navbar";
- //import Sidebarmenunew from "../../components/sidebarmenunew";
+ import Sidebarmenunew from "../../components/sidebarmenunew";
  import Newcompomenu from "../../components/newcompomenu";
 import FissionButton from "../../components/fissionButton";
+import Previewdisplay from "../../components/displaycode";
+
 
 const Canvaspage = () =>
 <div>     
@@ -25,9 +27,10 @@ const Canvaspage = () =>
 
         </Row>
 
- 
- <Row>
 
+
+ <Row>
+<Previewdisplay />
 
  </Row>    
 

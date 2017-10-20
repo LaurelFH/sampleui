@@ -9,7 +9,7 @@ import AppBar from 'material-ui/AppBar';
 import ReactDOM from 'react-dom';
 //import Draggable from 'react-draggable'; // The default
 import { Draggable, Droppable } from 'react-drag-and-drop';
-
+//THIS WILL NOW BE A LIST COMPONENT
 
 /*<Droppable 
 types ={['usercompo']} 
