@@ -3,15 +3,15 @@ import Container from "reactstrap/lib/Container";
 //import Grid from "reactstrap/lib/Grid";
 import Col from "reactstrap/lib/Col";
 import Row from "reactstrap/lib/Row";
-//import NavbarBrandNew from "../components/navbar";
- import Sidebarmenunew from "../../components/sidebarmenunew";
- import Newcompomenu from "../../components/newcompomenu";
-import FissionButton from "../../components/fissionButton";
-import Previewdisplay from "../../components/displaycode";
+//import NavbarBrandNew from "../components/Navbar";
+import Sidebarmenunew from "../../components/Sidebarmenunew";
+import Newcompomenu from "../../components/Newcompomenu";
+import FissionButton from "../../components/FissionButton";
+import Previewdisplay from "../../components/Displaycode";
 
 
 const Canvaspage = () =>
-<div>     
+    <div>     
     
     <Container style={{ marginTop: 30 }}>
         <Col size="md-12">

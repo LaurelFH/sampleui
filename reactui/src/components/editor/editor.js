@@ -1,6 +1,6 @@
 import ReactAce from 'react-ace-editor';
 import React, { Component } from 'react';
- import "./editor.css";
+ import "./Editor.css";
  
 class CodeEditor extends Component {
   

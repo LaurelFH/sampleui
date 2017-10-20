@@ -1,1 +1,1 @@
-export { default } from "./newcompomenu";
+export { default } from "./Newcompomenu";

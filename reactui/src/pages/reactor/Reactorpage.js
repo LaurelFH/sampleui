@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Container from "reactstrap/lib/Container";
-import Col from "reactstrap/lib/Col";
-import Row from "reactstrap/lib/Row";
+// import Container from "reactstrap/lib/Container";
+// import Col from "reactstrap/lib/Col";
+// import Row from "reactstrap/lib/Row";
 //import NavbarBrandNew from "../components/navbar";
-import Sidebarmenunew from "../../components/sidebarmenunew";
- import Newcompomenu from "../../components/newcompomenu";
+import Sidebarmenunew from "../../components/Sidebarmenunew";
+ import Newcompomenu from "../../components/Newcompomenu";
 // import FissionButton from "../../components/fissionButton";
 //set up the Drag and Drop tool
 import ReactDOM from 'react-dom';
@@ -47,22 +47,17 @@ render(){
 
     <h2>A preview of the components you have created and styled: </h2>
     
-    <Container style={{ marginTop: 30 }}>
+   
 
     <p>  Return to the editor on the canvas page for your final edits, or to add more components you would like to use</p>
     <p> If you are happy with what you see, click the Fission button to save you work</p>
-    <Row>
-    <Col xs="6">
+    
+   
   <Droppable types ={['usercompo']} 
   onDrop ={this.onDrop.bind(this)}>
   <div id="preview">should this be its own Component so I can update the state?</div>
   </Droppable>
-  </Col>
 
-
-  </Row>
-
-    </Container>
   </div>
 
 

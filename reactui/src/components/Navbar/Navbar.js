@@ -3,15 +3,16 @@ import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import FlatButton from 'material-ui/FlatButton';
+import "./Navbar.css";
 
 function handleTouchTap() {
-  alert('onClick triggered on the title component');
+    alert('onClick triggered on the title component');
 }
 
 const styles = {
-  title: {
-    cursor: 'pointer',
-  },
+    title: {
+        cursor: 'pointer',
+    },
 };
 
 /**
@@ -19,7 +20,7 @@ const styles = {
  * through the `onClick` property, and a [FlatButton](/#/components/flat-button) on the right.
  */
 const NavbarBrandNew = () => (
-  <AppBar
+        <AppBar
     title={<span style={styles.title}>Title</span>}
     onTitleTouchTap={handleTouchTap}
     iconElementLeft={<IconButton><NavigationClose /></IconButton>}

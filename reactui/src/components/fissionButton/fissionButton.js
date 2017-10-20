@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./fissionButton.css";
+import "./FissionButton.css";
 import RaisedButton from 'material-ui/RaisedButton';
 
 class FissionButton extends Component{

@@ -1,1 +1,1 @@
-export { default } from "./displaycode";
+export { default } from "./Displaycode";

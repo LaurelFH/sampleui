@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, {
+    Component
+} from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -8,7 +10,10 @@ import AppBar from 'material-ui/AppBar';
 //set up the Drag and Drop tool
 import ReactDOM from 'react-dom';
 //import Draggable from 'react-draggable'; // The default
-import { Draggable, Droppable } from 'react-drag-and-drop';
+import {
+    Draggable,
+    Droppable
+} from 'react-drag-and-drop';
 //THIS WILL NOW BE A LIST COMPONENT
 
 /*<Droppable 
@@ -18,20 +23,24 @@ onDrop = {this.onDrop.bind(this)}>
 
 </Droppable>*/
 /*this will be th emenu where people can add their commoments-- or should I switch with newcopmomenu*/
-export default class Sidebarmenunew extends React.Component {
+class Sidebarmenunew extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {open: false};
-  }
+    constructor(props) {
+        super(props);
+        this.state = {
+            open: false
+        };
+    }
 
-  handleToggle = () => this.setState({open: !this.state.open});
-  onDrop(data){
-  console.log(data)
-}
-  render() {
-    return (
-      <div>
+    handleToggle = () => this.setState({
+        open: !this.state.open
+    });
+    onDrop(data) {
+        console.log(data)
+    }
+    render() {
+        return (
+            <div>
         <RaisedButton
           label="Your Components" fullWidth={true} onClick={this.handleToggle}
         />
@@ -46,6 +55,8 @@ export default class Sidebarmenunew extends React.Component {
 
       </div>
 
-      );
-  }
+        );
+    }
 }
+
+export default Sidebarmenunew;

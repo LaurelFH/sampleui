@@ -1,9 +1,15 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, {
+    Component
+} from 'react';
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch
+} from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-import CodeEditor from "./components/editor";
-import FissionButton from "./components/fissionButton";
+import CodeEditor from "./components/Editor";
+//import FissionButton from "./components/fissionButton";
 //import PopoverExampleAnimation from "./components/sidebarmenu";
 //import ButtonExample from "./components/compbuttons";
 
@@ -17,20 +23,20 @@ import Tabbar from "./components/Tabbar";
 
 
 //importing page routes
- import Canvaspage from "./pages/canvas/Canvaspage.js";
- import Aboutpage from "./pages/about/Aboutpage.js";
- import Reactorpage from "./pages/reactor/Reactorpage.js";
+import Canvaspage from "./pages/canvas/Canvaspage.js";
+import Aboutpage from "./pages/about/Aboutpage.js";
+import Reactorpage from "./pages/reactor/Reactorpage.js";
 import Loginpage from "./pages/login/Loginpage.js";
 
 //importing the sidebar menus
- import Sidebarmenunew from "./components/sidebarmenunew";
- import Newcompomenu from "./components/newcompomenu";
+import Sidebarmenunew from "./components/Sidebarmenunew";
+import Newcompomenu from "./components/Newcompomenu";
 
 class App extends Component {
 
-  render() {
-    return (
-     <MuiThemeProvider muiTheme={getMuiTheme()}>
+    render() {
+        return (
+            <MuiThemeProvider muiTheme={getMuiTheme()}>
       <div className="App">
 <Tabbar />
       <Router> 
@@ -48,9 +54,9 @@ class App extends Component {
        
                   </div>
                   </MuiThemeProvider>
-                                   
-    );
-  }
+
+        );
+    }
 }
 
 export default App;
