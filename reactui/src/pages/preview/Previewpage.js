@@ -5,17 +5,15 @@ import Row from "reactstrap/lib/Row";
 //import NavbarBrandNew from "../components/navbar";
 import Sidebarmenunew from "../../components/sidebarmenunew";
  import Newcompomenu from "../../components/newcompomenu";
- import FissionButton from "../../components/fissionButton";
+// import FissionButton from "../../components/fissionButton";
 
 //set up the Drag and Drop tool
 import ReactDOM from 'react-dom';
 //import Draggable from 'react-draggable'; // The default
 import { Draggable, Droppable } from 'react-drag-and-drop';
 import RaisedButton from "material-ui/RaisedButton";
-
-
  import "./Previewpage.css";
-
+//import CodeEditor
 
 //make a bunch of buttons with this data and label them like drag and drop menu?
 //set up the render?
@@ -23,21 +21,26 @@ import RaisedButton from "material-ui/RaisedButton";
 //
 //
 
-//
-//
-//
+/* old test buttons  <Row>
+<Draggable type ="usercompo" data="menucompo"><span><RaisedButton> This is menu compo</RaisedButton></span></Draggable>
+<Draggable type ="usercompo" data="Navbarcompo"><span><RaisedButton> This is a Navbar compo</RaisedButton></span></Draggable>
+<Draggable type ="notgoodcompo" data="Footercompo"><span><RaisedButton> This is a Footer comppo</RaisedButton></span></Draggable>
+</Row>
+*/
+
 
 class  Canvaspage  extends Component {
 
 showData =()=> this.setState({});
+
+
+
 onDrop(data){
  console.log(data)
+
 }
 
 render(){
-
-
-
 
   return(
 
@@ -58,18 +61,12 @@ render(){
   </Droppable>
   </Row>
 
-
-
-  <Row>
-<Draggable type ="usercompo" data="menucompo"><span><RaisedButton> This is menu compo</RaisedButton></span></Draggable>
-<Draggable type ="usercompo" data="Navbarcompo"><span><RaisedButton> This is a Navbar compo</RaisedButton></span></Draggable>
-<Draggable type ="notgoodcompo" data="Footercompo"><span><RaisedButton> This is a Footer comppo</RaisedButton></span></Draggable>
-</Row>
+  <Sidebarmenunew />
 
 
 
 
-<FissionButton />
+
     </Container>
   </div>
 
