@@ -1,9 +1,26 @@
 import React from 'react';
 import {Tabs, Tab} from 'material-ui/Tabs';
 // Get this package from https://github.com/oliviertassinari/react-swipeable-views
-import SwipeableViews from 'react-swipeable-views';
+//import SwipeableViews from 'react-swipeable-views';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+
+
+/*these go after the classing router tag and before the /div
+<SwipeableViews
+          index={this.state.slideIndex}
+          onChangeIndex={this.handleChange}
+        >
+           <div style={styles.slide}>
+            Get Started with your Canvas
+
+                      </div>
+          <div style={styles.slide}>
+           Preview Your Work
+          </div>
+        </SwipeableViews>
+
+        */
 const styles = {
   headline: {
     fontSize: 24,
@@ -47,18 +64,7 @@ export default class Tabbar extends React.Component {
         </Tabs>
 
         </Router>
-        <SwipeableViews
-          index={this.state.slideIndex}
-          onChangeIndex={this.handleChange}
-        >
-           <div style={styles.slide}>
-            Get Started with your Canvas
-
-                      </div>
-          <div style={styles.slide}>
-           Preview Your Work
-          </div>
-        </SwipeableViews>
+        
       </div>
     );
   }
